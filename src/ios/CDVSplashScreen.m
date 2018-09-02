@@ -361,7 +361,7 @@
         // CB-9762's launch screen expects the image to fill the screen and be scaled using AspectFill.
         CGSize viewportSize = [UIApplication sharedApplication].delegate.window.bounds.size;
         _imageView.frame = CGRectMake(0, 0, viewportSize.width, viewportSize.height);
-        _imageView.contentMode = UIViewContentModeScaleAspectFill;
+        _imageView.contentMode = UIViewContentModeScaleAspectFit;
         return; 
     }
 
